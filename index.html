@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive calculator built with HTML, CSS Grid, and JavaScript.">
+  <title>DJ Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-label="Calculator">
+      <header class="calc-header">
+        <div>
+          <p class="eyebrow">SIMPLE TOOLS</p>
+          <h1>Calculator<span>.</span></h1>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark theme" title="Toggle theme">◐</button>
+      </header>
+
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div class="history" id="history"></div>
+        <output class="screen" id="screen">0</output>
+      </div>
+
+      <div class="keys" id="keys">
+        <button class="key utility" data-action="clear">AC</button>
+        <button class="key utility" data-action="delete" aria-label="Delete last digit">⌫</button>
+        <button class="key utility" data-action="percent">%</button>
+        <button class="key operator" data-operator="÷">÷</button>
+
+        <button class="key" data-digit="7">7</button>
+        <button class="key" data-digit="8">8</button>
+        <button class="key" data-digit="9">9</button>
+        <button class="key operator" data-operator="×">×</button>
+
+        <button class="key" data-digit="4">4</button>
+        <button class="key" data-digit="5">5</button>
+        <button class="key" data-digit="6">6</button>
+        <button class="key operator" data-operator="−">−</button>
+
+        <button class="key" data-digit="1">1</button>
+        <button class="key" data-digit="2">2</button>
+        <button class="key" data-digit="3">3</button>
+        <button class="key operator" data-operator="+">+</button>
+
+        <button class="key utility" data-action="sign">±</button>
+        <button class="key" data-digit="0">0</button>
+        <button class="key" data-action="decimal">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </div>
+      <p class="hint">Tip: you can also use your keyboard.</p>
+    </section>
+    <footer>Built with HTML, CSS Grid & JavaScript</footer>
+  </main>
+</body>
+</html>
